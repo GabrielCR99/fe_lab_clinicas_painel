@@ -9,7 +9,7 @@ final class PainelController extends MessagesControllerMixin {
   final painelData =
       listSignal<PainelCheckinModel>(const [], autoDispose: true);
 
-  late final Connect<void> _painelConnect;
+  late final Connect<void, void> _painelConnect;
   VoidCallback? _socketDispose;
   final PainelCheckinRepository _painelCheckinRepository;
 

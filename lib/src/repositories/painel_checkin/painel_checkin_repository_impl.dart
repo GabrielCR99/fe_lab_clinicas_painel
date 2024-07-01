@@ -1,4 +1,5 @@
 import 'package:dio/dio.dart';
+import 'package:flutter/foundation.dart';
 import 'package:intl/intl.dart';
 import 'package:lab_clinicas_core/lab_clinicas_core.dart';
 import 'package:web_socket_channel/web_socket_channel.dart';
@@ -22,7 +23,7 @@ final class PainelCheckinRepositoryImpl implements PainelCheckinRepository {
   }
 
   @override
-  ({WebSocketChannel channel, void Function() dispose}) openChannelSocker() {
+  ({WebSocketChannel channel, VoidCallback dispose}) openChannelSocker() {
     final channel = WebSocketChannel.connect(
       Uri.parse('$wsBackendBaseUrl?tables=painelCheckin'),
     );
