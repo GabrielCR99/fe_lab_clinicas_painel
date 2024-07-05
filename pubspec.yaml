@@ -10,7 +10,7 @@ environment:
 
 dependencies:
   asyncstate: ^2.1.0
-  dio: ^5.4.3
+  dio: ^5.5.0
   flutter:
     sdk: flutter
   flutter_getit: ^2.0.0
